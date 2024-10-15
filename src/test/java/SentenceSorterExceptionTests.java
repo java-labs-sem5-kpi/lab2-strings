@@ -1,14 +1,12 @@
 import com.sergosoft.sentencessorter.SentenceSorter;
 import org.junit.Test;
 
-import static org.junit.Assert.assertThrows;
-
 public class SentenceSorterExceptionTests {
 
     private final SentenceSorter sentenceSorter = new SentenceSorter();
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testInputTextIsNull() {
-        assertThrows(IllegalArgumentException.class, () -> sentenceSorter.sortByWordCount(null));
+        sentenceSorter.sortByWordCount(null);
     }
 }
