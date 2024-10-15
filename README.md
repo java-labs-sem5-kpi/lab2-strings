@@ -4,8 +4,7 @@
 
 ### Завдання
 **Тип текстових змінних:** `StringBuilder`  
-**Дія з текстом:**  
-Необхідно вивести всі речення заданого тексту у порядку зростання кількості слів у кожному з них.
+**Дія з текстом:** `Необхідно вивести всі речення заданого тексту у порядку зростання кількості слів у кожному з них.`
 
 ### Опис завдання
 
@@ -15,12 +14,21 @@
 4. Потрібно дотримуватись стандартів кодування (Java Code Conventions або [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)).
 5. Код має бути завантажений на GitHub.
 
+### Інструкція
+1. Склонуйте цей репозиторій `git clone https://github.com/java-labs-sem5-kpi/lab2-strings.git`
+2. Перейдіть у склонований репозиторій `cd lab2-strings`
+3. Зберіть проект за допомогою Maven `mvn clean install`
+4. Запустіть виконавчий файл для тестового запуску `java -jar ./target/sentences-sorter-1.0.jar`
+
+### Тестування
+Реалізоване за допомогою написання UNIT тестів, які автоматично запускаються під час збірки проекту Maven.
+
 ### Приклад виконання
 
 1. Вхідний текст:  
-   _"Java is great. Programming is fun. It helps solve problems."_
+   _"Three words sentence? Two words! One."_
 2. Виведений результат:  
-   _"It helps solve problems. Programming is fun. Java is great."_
+   _"One.Two words! Three words sentence?"_
 
 > **Автор:** Рибак Сергій  
 > **Група:** ІП-24
